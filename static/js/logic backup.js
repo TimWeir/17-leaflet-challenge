@@ -47,15 +47,15 @@ d3.json(url, function(data) {
     switch(true) {
       case depth > 90:
         return "red";
-      case depth > 75:
+      case depth > 80:
         return "orangered";
-      case depth > 60:
+      case depth > 70:
         return "orange";
-      case depth > 45:
+      case depth > 60:
         return "gold";
-      case depth > 30:
+      case depth > 50:
         return "yellow";
-      case depth > 15:
+      case depth > 40:
         return "lightgreen";
       default:
         return "green";
@@ -83,3 +83,4 @@ d3.json(url, function(data) {
   quakes.addTo(map);
 
 });
+
